@@ -2,9 +2,11 @@
 body {
     background-image: url('../img/fondo.jpg');
     background-repeat: no-repeat;
-    background-size: cover; /* Ajusta el tamaño según sea necesario */
+    background-size: cover;
+    /* Ajusta el tamaño según sea necesario */
     /* Otros estilos para el cuerpo del documento */
-    background-color: #fc69ab; /* Color de fondo por si la imagen no carga */
+    background-color: #fc69ab;
+    /* Color de fondo por si la imagen no carga */
     color: #000000;
     margin-left: 50px;
     margin-top: 70px;
@@ -20,7 +22,7 @@ body {
     border-radius: 10px;
     width: 550px;
     height: 330px;
-    filter: drop-shadow(0 0 10px #fcd469);
+    filter: drop-shadow(0 0 10px #ffac79);
     /* Añade más propiedades según sea necesario */
 }
 
@@ -45,7 +47,8 @@ input[type="submit"]:hover {
 
 /* Estilos para el botón de eliminar */
 input[type="reset"] {
-    background-color: #f15252; /* Rojo */
+    background-color: #f15252;
+    /* Rojo */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -59,30 +62,56 @@ input[type="reset"] {
 }
 
 input[type="reset"]:hover {
-    background-color: #f06565; /* Rojo más claro al pasar el mouse */
+    background-color: #f83b3b;
+    /* Rojo más claro al pasar el mouse */
 }
 
-
-/* Estilos para las opciones del select */
-option {
-    padding: 5px;
-}
-
-/* Estilos para el contenedor del select */
-.select-container {
+/* Estilos para el nuevo select */
+.custom-select {
     position: relative;
-    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
 }
 
-/* Estilos para el ícono del select */
-.select-icon {
+/* Estilos para el texto "Marcas" dentro del cuadro */
+.custom-select::before {
+    content: 'Marcas';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999; /* Color del texto "Marcas" */
+}
+
+/* Estilos para la flecha */
+.custom-select::after {
+    content: '';
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000; /* Color de la flecha */
 }
 
+/* Estilos al pasar el cursor sobre el select */
+.custom-select:hover {
+    border-color: #999;
+}
+
+/* Estilos al hacer clic en el select */
+.custom-select:focus {
+    outline: none;
+    border-color: #555;
+}
 /* Estilos para la imagen fondo.jpg */
 .imagen-fondo {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../img/fondo.jpg');
@@ -109,6 +138,6 @@ img {
     border-radius: 10px;
     width: 550px;
     height: 330px;
-    filter: drop-shadow(0 0 10px  #ffac79);
+    filter: drop-shadow(0 0 10px #ffac79);
     /* Añade más propiedades según sea necesario */
 }
