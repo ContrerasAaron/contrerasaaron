@@ -1,0 +1,69 @@
+body {
+    background-color: #fc69ab;
+    color: #000000;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+
+/* Estilos para los inputs */
+input[type="text"],
+input[type="submit"],
+input[type="reset"],
+input[type="radio"],
+input[type="checkbox"] {
+    border-radius: 15px;
+    padding: 2px;
+}
+
+/* Estilos para el botón de submit y reset */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el select */
+select {
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+/* Estilos para las opciones del select */
+option {
+    padding: 5px;
+}
+
+/* Estilos para el contenedor del select */
+.select-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para el ícono del select */
+.select-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
