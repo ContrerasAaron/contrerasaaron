@@ -1,19 +1,27 @@
+/* Estilos para el cuerpo del documento */
 body {
-    background-color: #fc69ab;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño según sea necesario */
+    /* Otros estilos para el cuerpo del documento */
+    background-color: #fc69ab; /* Color de fondo por si la imagen no carga */
     color: #000000;
     margin-left: 50px;
     margin-top: 70px;
     margin-right: 50px;
+    /* Otros estilos para el cuerpo del documento */
 }
 
-/* Estilos para los inputs */
-input[type="text"],
-input[type="submit"],
-input[type="reset"],
-input[type="radio"],
-input[type="checkbox"] {
-    border-radius: 15px;
-    padding: 2px;
+/* Estilos para el contenedor de la imagen */
+.contenedor-imagenes {
+    /* Estilos para el contenedor de la imagen descarga.jpg */
+    float: right;
+    vertical-align: bottom;
+    border-radius: 10px;
+    width: 550px;
+    height: 330px;
+    filter: drop-shadow(0 0 10px #fcd469);
+    /* Añade más propiedades según sea necesario */
 }
 
 /* Estilos para el botón de guardar */
@@ -37,7 +45,7 @@ input[type="submit"]:hover {
 
 /* Estilos para el botón de eliminar */
 input[type="reset"] {
-    background-color: #e96060; /* Rojo */
+    background-color: #f15252; /* Rojo */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -51,8 +59,9 @@ input[type="reset"] {
 }
 
 input[type="reset"]:hover {
-    background-color: #ec7272; /* Rojo más claro al pasar el mouse */
+    background-color: #f06565; /* Rojo más claro al pasar el mouse */
 }
+
 
 /* Estilos para las opciones del select */
 option {
