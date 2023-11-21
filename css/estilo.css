@@ -16,9 +16,8 @@ input[type="checkbox"] {
     padding: 2px;
 }
 
-/* Estilos para el botón de submit y reset */
-input[type="submit"],
-input[type="reset"] {
+/* Estilos para el botón de guardar */
+input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -32,20 +31,27 @@ input[type="reset"] {
     transition-duration: 0.4s;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Estilos para el select */
-select {
-    border-radius: 15px;
-    padding: 5px;
-    width: 100%;
+/* Estilos para el botón de eliminar */
+input[type="reset"] {
+    background-color: #e96060; /* Rojo */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    border: none;
-    background-color: #f1f1f1;
+    transition-duration: 0.4s;
+}
+
+input[type="reset"]:hover {
+    background-color: #ec7272; /* Rojo más claro al pasar el mouse */
 }
 
 /* Estilos para las opciones del select */
@@ -66,4 +72,34 @@ option {
     right: 10px;
     transform: translateY(-50%);
     pointer-events: none;
+}
+
+/* Estilos para la imagen fondo.jpg */
+.imagen-fondo {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 200px;
+    /* Ajusta según tu diseño */
+    margin-right: 100px;
+    /* Ajusta según tu diseño */
+    margin-top: 50px;
+    /* Ajusta según tu diseño */
+    color: #7b69fc;
+    height: 300px;
+    /* Ajusta según tu diseño */
+    width: 800px;
+    /* Ajusta según tu diseño */
+    /* Añade más propiedades según sea necesario */
+}
+
+/* Estilos para la imagen descarga.jpg */
+img {
+    float: right;
+    vertical-align: bottom;
+    border-radius: 10px;
+    width: 550px;
+    height: 330px;
+    filter: drop-shadow(0 0 10px #fcd469);
+    /* Añade más propiedades según sea necesario */
 }
