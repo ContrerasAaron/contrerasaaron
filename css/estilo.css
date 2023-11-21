@@ -109,6 +109,6 @@ img {
     border-radius: 10px;
     width: 550px;
     height: 330px;
-    filter: drop-shadow(0 0 10px #fcd469);
+    filter: drop-shadow(0 0 10px  #ffac79);
     /* Añade más propiedades según sea necesario */
 }
